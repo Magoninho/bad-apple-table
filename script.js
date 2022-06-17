@@ -5,6 +5,9 @@ canvas.width = myvideo.width;
 canvas.height = myvideo.height;
 let sample_size = parseInt(prompt("pixel scale:")); // "donwscale factor"
 
+if (isNaN(sample_size)) sample_size = 5;
+
+
 function createTable(width, height) {
 	var table = document.createElement('table');
 	var tableBody = document.createElement('tbody');
