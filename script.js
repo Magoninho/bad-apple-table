@@ -3,9 +3,9 @@ let ctx = canvas.getContext("2d");
 let myvideo = document.getElementById("video");
 canvas.width = myvideo.width;
 canvas.height = myvideo.height;
-let sample_size = parseInt(prompt("pixel scale:")); // "donwscale factor"
+let sample_size = parseInt(prompt("pixel scale (default: 8):")); // "donwscale factor"
 
-if (isNaN(sample_size)) sample_size = 5;
+if (isNaN(sample_size)) sample_size = 8;
 
 
 function createTable(width, height) {
